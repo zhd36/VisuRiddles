@@ -1,1 +1,1 @@
-# VisuRiddles_Homepage
+# Homepage of VisuRiddles
