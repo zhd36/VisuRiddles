@@ -1,48 +1,233 @@
-
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>你的论文标题</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 40px auto; max-width: 700px; background: #f7f7f7; color: #222; }
-    .container { background: #fff; padding: 40px; border-radius: 20px; box-shadow: 0 4px 24px #bbb2; }
-    h1 { font-size: 2.4em; margin-bottom: 0.1em; }
-    h2 { margin-top: 2em; font-size: 1.2em; color: #666; }
-    a.button { display: inline-block; margin: 10px 0; padding: 12px 22px; background: #2574a9; color: #fff; border-radius: 8px; text-decoration: none; font-weight: bold;}
-    a.button:hover { background: #3498db; }
-    .authors { margin: 1em 0; }
-    .contact { margin-top: 2em; color: #888;}
-  </style>
+    <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-55V1E709SK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-55V1E709SK');
+  </script>
+  <meta charset="utf-8">
+
+  <title>VisuRiddles: Fine-grained Perception is a Primary Bottleneck for Multimodal Large Language Models in Abstract Visual Reasoning</title>
+
+  <meta name="description" content="VisuRiddles: Fine-grained Perception is a Primary Bottleneck for Multimodal Large Language Models in Abstract Visual Reasoning">
+
+  <meta name="keywords" content="VisuRiddles，MLLM，Abstract Visual Reasoning，Fine-grained Perception，Multimodal Large Language Models">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <script type="text/javascript" async
+src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+  <script src="./static/js/script.js"></script>
 </head>
 <body>
-  <div class="container">
-    <h1>你的论文标题</h1>
-    <div class="authors">作者：你的名字，合作作者</div>
-    <div class="affiliation">学校 / 实验室名</div>
 
-    <h2>简介</h2>
-    <p>这里用一两句话介绍你的论文主题和亮点，比如主要贡献是什么，解决了什么问题。</p>
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <!-- TODO: 修改为你的论文标题 -->
+          <h1 class="title is-1 publication-title">VisuRiddles: Fine-grained Perception is a Primary Bottleneck for Multimodal Large Language Models in Abstract Visual Reasoning</h1>
+          <div class="is-size-5 publication-authors">
+            <!-- TODO: 填写你的作者信息和链接 -->
+            <span class="author-block"><a href="#">Hao Yan</a><sup>1</sup>,</span>
+            <span class="author-block"><a href="#">Handong Zheng</a><sup>1</sup>,</span>
+            <span class="author-block"><a href="#">Hao Wang</a><sup>2</sup>,</span>
+            <span class="author-block"><a href="#">Liang Yin</a><sup>1</sup>,</span>
+            <span class="author-block"><a href="#">Xingchen Liu</a><sup>1</sup>,</span>
+            <span class="author-block"><a href="#">Zhenbiao Cao</a><sup>1</sup>,</span>
+            <span class="author-block"><a href="#">Xinxing Su</a><sup>2</sup>,</span>
+            <span class="author-block"><a href="#">Zihao Chen</a><sup>2</sup>,</span>
+            <span class="author-block"><a href="#">Jihao Wu</a><sup>2</sup>,</span>
+            <span class="author-block"><a href="#">Minghui Liao</a><sup>2</sup><sup>*</sup>,</span>
+            <span class="author-block"><a href="#">Chao Weng</a><sup>2</sup>,</span>
+            <span class="author-block"><a href="#">Wei Chen</a><sup>1</sup>,</span>
+            <span class="author-block"><a href="#">Yuliang Liu</a><sup>1</sup>,</span>
+            <span class="author-block"><a href="#">Xiang Bai</a><sup>1</sup></span>          </div>
 
-    <h2>主要内容/创新点</h2>
-    <ul>
-      <li>创新点1</li>
-      <li>创新点2</li>
-      <li>创新点3</li>
-    </ul>
+          <!-- affiliations -->
+          <div class="subtitle is-size-5">
+          <!-- <div class="is-size-5 publication-authors"> -->
+            <sup>1</sup> Huazhong University of Science and Technology &nbsp;
+            <sup>2</sup> Huawei Inc. <br>
+            
+            <!-- <span class="author-block"><sup>1</sup>The University of Texas at Austin</span>
+            <span class="author-block"><sup>2</sup>Nvidia</span> <br>
+            <span class="author-block"><sup>3</sup>Xiamen University</span> <br>
+            <span class="author-block"><sup>4</sup>Georgia Institute of Technology</span> <br>
+            <span class="author-block"><sup>5</sup>Stanford University</span> <br>
+            <span class="author-block"><sup>6</sup>University of Southern California</span> <br>
+            <span class="author-block"><sup>*</sup>denotes equal contribution</span> -->
+          </div>
 
-    <h2>资源链接</h2>
-    <a class="button" href="你的论文pdf链接" target="_blank">下载论文PDF</a>
-    <a class="button" href="代码仓库链接" target="_blank">GitHub代码</a>
 
-    <!-- 可选：演示图片/视频 -->
-    <h2>演示截图</h2>
-    <img src="demo.png" alt="Demo" style="width:100%;border-radius:12px;box-shadow:0 2px 12px #aaa3;">
-    
-    <div class="contact">
-      联系方式：<a href="mailto:你的邮箱">你的邮箱</a> | <a href="https://github.com/你的用户名" target="_blank">GitHub</a>
+          <!-- TODO: update paper and video link once upload -->
+          <div class="column has-text-centered">
+            <!-- <div class="publication-links"> -->
+              <!-- PDF Link. -->
+              <span class="link-block">
+              <a href=""
+                 class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                    <i class="fas fa-file-pdf"></i>
+                </span>
+                <span>Paper</span>
+              </a>
+              </span>
+              <span class="link-block">
+              <a href=""
+                 class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                </span>
+                <span>arXiv</span>
+              </a>
+            </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/yh-hust/VisuRiddles"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                </a>
+              </span>
+              <!-- Demo Link. -->
+<!--               <span class="link-block">
+                <a href="https://github.com/liuff19/ReconX"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span>🤗 Demo</span>
+                </a>
+              </span> -->
+            </div>
+
+
+        </div>
+      </div>
     </div>
   </div>
+</section>
+
+<hr>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <!-- TODO: 替换为你的teaser图片 -->
+    
+          <!-- TODO: 替换为你的摘要 -->
+          <p>
+            Recent strides in multimodal large language models (MLLMs) have significantly advanced their performance in many reasoning tasks. However, Abstract Visual Reasoning (AVR) remains a critical challenge, primarily due to limitations in perceiving abstract graphics. To tackle this issue, we investigate the bottlenecks in current MLLMs and synthesize training data to improve their abstract visual perception. First, we propose VisuRiddles, a benchmark for AVR, featuring tasks meticulously constructed to assess models' reasoning capacities across five core dimensions and two high-level reasoning categories. Second, we introduce the Perceptual Riddle Synthesizer (PRS),  an automated framework for generating riddles with fine-grained perceptual descriptions. PRS not only generates valuable training data for abstract graphics but also provides fine-grained perceptual description, crucially allowing for supervision over intermediate reasoning stages and thereby improving both training efficacy and model interpretability. Our extensive experimental results on VisuRiddles empirically validate that fine-grained visual perception is the principal bottleneck and our synthesis framework markedly enhances the performance of contemporary MLLMs on these challenging tasks. Our code and dataset will be released at <a href="https://github.com/yh-hust/VisuRiddles">https://github.com/yh-hust/VisuRiddles</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Method</h2>
+        <div class="content has-text-justified">
+          <!-- TODO: 替换为你的方法图 -->
+
+          <img src="./static/images/Fig3.png" alt="Method">
+          <p><strong>Overview of the PRS framework.</strong> (a) A unified pipeline for generating abstract graphics with fine-grained perceptual descriptions
+across different rule categories. (b) Visualization of synthesized riddles based on positional rule and stylistic rule.</p>
+          <!-- TODO: 替换为你的方法描述 -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Experiments & Examples</h2>
+        <div class="content has-text-justified">
+          <!-- TODO: 替换为你的实验结果图/案例图 -->
+          <img src="./static/images/Fig2.png" alt="Example">
+
+          <img src="./static/images/main_results.png" alt="Experiments">
+          <!-- TODO: 可选，添加对比/案例说明 -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>
+@article{TODO:你的引用key,
+  title={TODO: 你的论文标题},
+  author={TODO: 你的作者列表},
+  year={TODO: 发表年份},
+  journal={TODO: 期刊/会议/预印本},
+  url={TODO: 你的论文链接}
+}
+    </code></pre>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <p>
+        <!-- TODO: 修改为你的版权或致谢 -->
+        This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+      </p>
+      <p>
+        Template adapted from <a href="https://nerfies.github.io/">Nerfies</a>.
+      </p>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>
